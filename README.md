@@ -1,3 +1,3 @@
 # addressBook
 ### address book web application
-created with Spring(STS4)
+created with Spring Framework(STS4)
