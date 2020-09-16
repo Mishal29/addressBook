@@ -28,11 +28,6 @@ public class AddressEditController {
 			Model model,
 			@PathVariable("id") String pathVariable
 	) {
-		//debug
-		System.out.println("in getAddressEdit()");
-		model.asMap().entrySet().stream().forEach(s -> System.out.println(s));
-		System.out.println();
-		
 		if(pathVariable != null && pathVariable.length() > 0) {
 			int addressId = Integer.parseInt(pathVariable);
 			
@@ -55,11 +50,6 @@ public class AddressEditController {
 			Model model
 	) {
 		if(bindingResult.hasErrors()) {
-			//debug
-			System.out.println("in postAddressEditUpdate()");
-			model.asMap().entrySet().stream().forEach(s -> System.out.println(s));
-			System.out.println();
-			
 			return getAddressEdit(model, String.valueOf(form.getAddressId()));
 		}
 		
@@ -125,11 +115,6 @@ public class AddressEditController {
 			@ModelAttribute Address address,
 			Model model
 	) {
-		//debug
-		System.out.println("in postRegister()");
-		model.asMap().entrySet().stream().forEach(s -> System.out.println(s));
-		System.out.println();
-		
 		return "register";
 	}
 	
@@ -151,11 +136,6 @@ public class AddressEditController {
 		address.setMail(form.getMail());
 		address.setNote(form.getNote());
 		address.setUserId(form.getUserId());
-		
-		//debug
-		System.out.println("in postRegisterCofirm()");
-		model.asMap().entrySet().stream().forEach(s -> System.out.println(s));
-		System.out.println();
 		
 		try {
 			boolean result = addressService.insertOne(address);
@@ -182,11 +162,6 @@ public class AddressEditController {
 			@RequestParam("keyword") String keyword,
 			Model model
 	) {
-		//debug
-		System.out.println("in postSearch()");
-		model.asMap().entrySet().stream().forEach(s -> System.out.println(s));
-		System.out.println();
-		
 		return new HomeController().getHome(model);
 	}
 }

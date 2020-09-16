@@ -31,11 +31,6 @@ public class HomeController {
 
 	@GetMapping("/home")
 	public String getHome(Model model) {
-		//debug
-		System.out.println("in getHome()");
-		model.asMap().entrySet().stream().forEach(s -> System.out.println(s));
-		System.out.println();
-		
 		return "home";
 	}
 	
@@ -63,11 +58,6 @@ public class HomeController {
 		Address address = new Address();
 		address.setUserId(form.getUserId());
 		model.addAttribute("address", address);
-		
-		//debug
-		System.out.println("in postHome()");
-		model.asMap().entrySet().stream().forEach(s -> System.out.println(s));
-		System.out.println();
 		
 		return "home";
 	}

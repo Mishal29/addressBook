@@ -1,9 +1,7 @@
 --ユーザー
-INSERT INTO user VALUES('jobi', 'sasaki', 'pass');
+INSERT INTO user VALUES('hoge', 'hoge', 'hoge');
 
 --住所
-INSERT INTO address VALUES(1, '佐々木春輝', 'ささきはるき', '盛岡市つつじが丘20-4', '07020100287', 'h.sasaki.sys19@morijyobi.ac.jp', 'テスト用(自分)', 'jobi');
+INSERT INTO address VALUES(1, '小林 達也', 'こばやし たつや', '富山県館山市本町3-2-8', '03823677184', 'kobayashi@morijyobi.ac.jp', 'サンプル', 'hoge');
 
-INSERT INTO address VALUES(2, '花坂虎之介', 'はなさかとらのすけ', '盛岡市仙北3-7', '12345678901', 't.hanasaka.sys19@morijyobi.ac.jp', '四千頭身 後藤', 'jobi');
-
-INSERT INTO address VALUES(3, '削除', 'さくじょ', '家', '24526673453', 'hayakusakujosite@kesi.teku.re', '削除用', 'jobi');
+INSERT INTO address VALUES(2, '戸屋 恵実子', 'とや えみこ', '福島県里土村11-6', '12345678901', 'toya@morijyobi.ac.jp', 'サンプル２', 'hoge');
