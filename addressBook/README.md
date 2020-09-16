@@ -3,7 +3,7 @@
 created with Spring Framework(STS4)
 ***
 
-sample user
+**sample user**
 <dl>
 	<dt>id</dt>
 	<dd>hoge</dd>
